@@ -9,7 +9,7 @@ console.log(movieArray)
 const App = () => {
   return (
     <div className="App">
-      <h1>Movie List</h1>
+      <h1 className='App-header'>Movie List</h1>
       <div>
       {movieArray.map((movie, index) => (
         <div key={movie.id}>
