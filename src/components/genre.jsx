@@ -1,49 +1,58 @@
 const Genre = (props) => {
     let myColorVariable;
     switch(props.genre) {
-        case 'action':
+        case 'Action':
             myColorVariable = 'red'
             break
+        case 'Crime':
+            myColorVariable = 'darkblue'
+            break
+        case 'Thriller':
+            myColorVariable = 'black'
+            break
+        case 'Science Fiction':
+            myColorVariable = 'darkgreen'
+            break
+        case 'Fantasy':
+            myColorVariable = 'blue'
+            break
+        case 'Comedy':
+            myColorVariable = 'orange'
+            break
+        case 'Drama':
+            myColorVariable = 'purple'
+            break
+        case 'Adventure':
+            myColorVariable = 'yellowgreen'
+            break
+        case 'Animation':
+            myColorVariable = 'darkred'
+            break
+        case 'Family':
+            myColorVariable = 'lightblue'
+            break
+        case 'Horror':
+            myColorVariable = 'silver'
+            break
+        case 'History':
+            myColorVariable = 'grey'
+            break
+        case 'Mystery':
+            myColorVariable = 'pink'
+            break
+        case 'Romance':
+            myColorVariable = 'aquamarine'
+            break
+
         default:
             myColorVariable = 'red'
     }
-    switch(props.genre) {
-        case 'romance':
-            myColorVariable = 'blue'
-            break
-        default:
-            myColorVariable = 'blue'
-    }
-    switch(props.genre) {
-        case 'comedy':
-            myColorVariable = 'yellow'
-            break
-        default:
-            myColorVariable = 'yellow'
-    }
-    switch(props.genre) {
-        case 'drama':
-            myColorVariable = 'purple'
-            break
-        default:
-            myColorVariable = 'purple'
-    }
-    switch(props.genre) {
-        case 'animated':
-            myColorVariable = 'orange'
-            break
-        default:
-            myColorVariable = 'orange'
-    }
+    
     
     
     return (
         <div>
-            <p style={{backgroundColor: 'lightgrey', color: 'red'}} >{ props.genre }</p>
-            <p style={{backgroundColor: 'lightgrey', color: 'blue'}} >{ props.genre }</p>
-            <p style={{backgroundColor: 'lightgrey', color: 'yellow'}} >{ props.genre }</p>
-            <p style={{backgroundColor: 'lightgrey', color: 'purple'}} >{ props.genre }</p>
-            <p style={{backgroundColor: 'lightgrey', color: 'orange'}} >{ props.genre }</p>
+            <p style={{backgroundColor: myColorVariable, color: 'white'}} >{ props.genre }</p>
         </div>
     )
 }
