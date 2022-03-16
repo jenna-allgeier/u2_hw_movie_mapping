@@ -23,7 +23,7 @@ const App = () => {
           {movie.genres.map((genre, index) => (
             <div key={genre.id}>
               <Genre
-                genre={ movie.genre }
+                genre={ genre.name }
             />
             </div>
           ))}

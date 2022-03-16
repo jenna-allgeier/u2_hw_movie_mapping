@@ -39,11 +39,11 @@ const Genre = (props) => {
     
     return (
         <div>
-            <p style={{backgroundColor: myColorVariable, color: 'red'}} >{ props.genre }action</p>
-            <p style={{backgroundColor: myColorVariable, color: 'blue'}} >{ props.genre }</p>
-            <p style={{backgroundColor: myColorVariable, color: 'yellow'}} >{ props.genre }</p>
-            <p style={{backgroundColor: myColorVariable, color: 'purple'}} >{ props.genre }</p>
-            <p style={{backgroundColor: myColorVariable, color: 'orange'}} >{ props.genre }</p>
+            <p style={{backgroundColor: 'lightgrey', color: 'red'}} >{ props.genre }</p>
+            <p style={{backgroundColor: 'lightgrey', color: 'blue'}} >{ props.genre }</p>
+            <p style={{backgroundColor: 'lightgrey', color: 'yellow'}} >{ props.genre }</p>
+            <p style={{backgroundColor: 'lightgrey', color: 'purple'}} >{ props.genre }</p>
+            <p style={{backgroundColor: 'lightgrey', color: 'orange'}} >{ props.genre }</p>
         </div>
     )
 }
