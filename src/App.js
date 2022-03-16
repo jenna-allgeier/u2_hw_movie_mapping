@@ -6,7 +6,7 @@ import Genre from './components/genre.jsx'
 
 console.log(movieArray)
 
-const App = (props) => {
+const App = () => {
   return (
     <div className="App">
       <h1>Movie List</h1>
@@ -23,7 +23,7 @@ const App = (props) => {
           {movie.genres.map((genre, index) => (
             <div key={genre.id}>
               <Genre
-                genres={ movie.genres }
+                genre={ movie.genre }
             />
             </div>
           ))}
@@ -34,5 +34,6 @@ const App = (props) => {
     </div>
   )
 };
+
 
 export default App;
