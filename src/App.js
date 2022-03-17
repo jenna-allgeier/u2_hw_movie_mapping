@@ -1,39 +1,33 @@
 import './styles/App.css'
 import React from 'react'
 import movieArray from './data/movies.json'
-import Movie from './components/movie.jsx'
-import Genre from './components/genre.jsx'
+import Movie from './components/Movie'
+import Genre from './components/Genre'
 
-console.log(movieArray)
+// ^ bring in everything you need for the component, react/data/jsx files
 
-const App = () => {
+// ===================================================
+
+const App = () => { // the commponent definition
   return (
     <div className="App">
       <h1 className='App-header'>Movie List</h1>
-      <div>
-      {movieArray.map((movie, index) => (
-        <div key={movie.id}>
-          <Movie
-            poster_path={ movie.poster_path }
-            title={ movie.title }
-            release_date={ movie.release_date }
-            overview={ movie.overview }
-          />
+      
+      {movieArray.map((movie) => (
+        <div className="App">
+          <Movie film={ movie } key={movie.id}/>
 
-          {movie.genres.map((genre, index) => (
-            <div key={genre.id}>
-              <Genre
-                genre={ genre.name }
-            />
-            </div>
+      {movie.genres.map((genre) => (
+          
+          <Genre genre={ genre } />
           ))}
-
-        </div>
+          </div>
       ))}
-      </div>
     </div>
   )
 };
 
+// ==============================================================
 
-export default App;
+export default App; // making the component AND all of it's defined functionality
+// available for everything else

@@ -1,6 +1,6 @@
 const Genre = (props) => {
     let myColorVariable;
-    switch(props.genre) {
+    switch (props.genre.name) {
         case 'Action':
             myColorVariable = 'red'
             break
@@ -43,7 +43,6 @@ const Genre = (props) => {
         case 'Romance':
             myColorVariable = 'aquamarine'
             break
-
         default:
             myColorVariable = 'red'
     }
@@ -52,7 +51,9 @@ const Genre = (props) => {
     
     return (
         <div>
-            <p style={{backgroundColor: myColorVariable, color: 'white'}} >{ props.genre }</p>
+            <p style={{ backgroundColor: myColorVariable, color: '#ffffff'}} >
+                { props.genre.name }
+            </p>
         </div>
     )
 }
